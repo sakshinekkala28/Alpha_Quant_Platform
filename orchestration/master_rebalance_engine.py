@@ -55,7 +55,7 @@ from telemetry.telemetry import (
     TelemetryManager
 )
 
-from mlflow_track.mlflow_manager import (
+from mlops.mlflow_manager import (
     MLflowManager
 )
 
