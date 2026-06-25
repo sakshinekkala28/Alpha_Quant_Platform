@@ -24,7 +24,7 @@ from reportlab.lib.styles import (
 
 )
 
-from core.settings import settings
+from config.settings import settings
 
 # ==========================================================
 # LOGGING

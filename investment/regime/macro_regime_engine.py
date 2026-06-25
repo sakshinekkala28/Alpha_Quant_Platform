@@ -8,7 +8,7 @@ import pandas as pd
 
 import numpy as np
 
-from analytics.regime.macro_repository import (
+from market_data.macro import (
     MacroRepository,
     MacroLatestValueExtractor
 )

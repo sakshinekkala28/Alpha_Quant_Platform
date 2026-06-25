@@ -8,7 +8,7 @@ from datetime import datetime
 
 import pandas as pd
 
-from core.settings import settings
+from config.settings import settings
 
 # ==========================================================
 # LOGGING

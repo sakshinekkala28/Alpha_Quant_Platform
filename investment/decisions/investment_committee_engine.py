@@ -8,7 +8,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from core.settings import settings
+from config.settings import settings
 
 # ==========================================================
 # PATHS

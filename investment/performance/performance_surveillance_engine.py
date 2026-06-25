@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import logging
 
-from core.settings import settings
+from config.settings import settings
 
 from pathlib import Path
 

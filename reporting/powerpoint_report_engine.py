@@ -10,7 +10,7 @@ from pptx import Presentation
 
 from pptx.util import Inches
 
-from core.settings import settings
+from config.settings import settings
 
 # ==========================================================
 # LOGGING

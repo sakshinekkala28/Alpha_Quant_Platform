@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from core.settings import settings
+from config.settings import settings
 
 
 logging.basicConfig(
@@ -168,46 +168,20 @@ class CommitteePackIntegrator:
 
     ):
 
-        rows = []
+        decision_section = final_decision.copy()
 
-        for _, row in final_decision.iterrows():
-
-            rows.append(
-
-                {
-
-                    "Section":
-
-                        "Final_Decision",
-
-                    "Metric":
-
-                        row["Metric"],
-
-                    "Value":
-
-                        row["Value"]
-
-                }
-
-            )
+        decision_section.insert(
+            0,
+            "Section",
+            "Final_Decision"
+        )
 
         return pd.concat(
-
             [
-
                 committee,
-
-                pd.DataFrame(
-
-                    rows
-
-                )
-
+                decision_section
             ],
-
             ignore_index=True
-
         )
     
 class FinalDecisionIntegrationExporter:
